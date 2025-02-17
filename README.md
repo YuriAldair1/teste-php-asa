@@ -17,7 +17,7 @@ Este projeto foi desenvolvido para facilitar o gerenciamento de consultas médic
 
 ## Instalação
 
-1. git clone git://github.com/
+1. git clone https://github.com/YuriAldair1/teste-php-asa.git
 
 ### Pré-requisitos 
 
