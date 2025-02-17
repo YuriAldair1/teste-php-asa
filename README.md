@@ -40,7 +40,9 @@ Este projeto foi desenvolvido para facilitar o gerenciamento de consultas médic
 ### outra forma de criar o banco
 
 2.1. docker-compose exec db bash
+
 2.2. mysql -u root -p123456
+
 2.3. CREATE DATABASE asa;
 
 
