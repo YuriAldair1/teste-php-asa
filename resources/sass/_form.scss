@@ -1,0 +1,14 @@
+/* Estilo para o campo de entrada com foco customizado */
+.custom-focus {
+    &:focus {
+        outline: none;
+        border-color: #cbd5e0; /* Cor de borda semelhante ao foco do Tailwind (blue-100) */
+        box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2); /* Sombras de foco azul com a cor ajustada */
+    }
+}
+
+/* Para o caso de erro, a borda muda para vermelho */
+.form-control.is-invalid {
+    border-color: #f87171; /* Vermelho semelhante ao do erro no Tailwind (red-200) */
+    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.5); /* Sombras de erro com a cor ajustada */
+}

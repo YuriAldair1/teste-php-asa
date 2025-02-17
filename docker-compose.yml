@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  # Serviço do Laravel
+  app:
+    build:
+      context: .
+    container_name: laravel
+    restart: "always"
+    env_file:
+      - ./.env
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+  # Serviço do MySQL
+  db:
+    image: mariadb:10.4
+    container_name: "laravel_database"
+    restart: "always"
+    environment:
+      MARIADB_ROOT_PASSWORD: '123456'  # Esta variável está correta?
+      MARIADB_USER: root
+      MARIADB_PASSWORD: '123456'
+    ports:
+      - "127.0.0.1:2121:3306"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

@@ -1,0 +1,95 @@
+.nav_footer h3 {
+  font-size: 16pt;
+  color: #000;
+}
+
+.img-fluid {
+  width: 120px;
+  height: auto;
+}
+
+.parent {
+  display: grid;
+  place-content: center;
+  align-self: center;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.position-ref {
+  position: relative;
+}
+
+.top-right {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  font-size: 84px;
+}
+
+.links > a {
+  color: #636b6f;
+  padding: 0 25px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.m-b-md {
+  margin-bottom: 30px;
+}
+
+/* Estilo para o campo de entrada com foco customizado */
+.custom-focus:focus {
+  outline: none;
+  border-color: #cbd5e0; /* Cor de borda semelhante ao foco do Tailwind (blue-100) */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2); /* Sombras de foco azul com a cor ajustada */
+}
+
+/* Para o caso de erro, a borda muda para vermelho */
+.form-control.is-invalid {
+  border-color: #f87171; /* Vermelho semelhante ao do erro no Tailwind (red-200) */
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.5); /* Sombras de erro com a cor ajustada */
+}
+
+.hover {
+  cursor: pointer;
+}
+
+.menu-home {
+  background-color: #212529;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.nav-link {
+  color: #adb5bd;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #fff;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
